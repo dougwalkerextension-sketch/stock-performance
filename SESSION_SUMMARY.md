@@ -4,7 +4,7 @@ October 7, 2026
 
 ## Project overview
 
-Built a Streamlit app for user-selected mutual funds, defaulting to Vanguard Target Retirement 2035 Fund (VTTHX) with three pages: historical performance, S&P 500 comparison, and a personalized investment projection through December 31, 2035. A searchable ticker box offers common fund suggestions and accepts custom tickers; a dropdown recalls the five most recent unique entries for the current browser session. Features include growth charts, cumulative return, compound annual growth rate (CAGR), volatility, drawdown, calendar-year returns, and CSV downloads. Users can enter a purchase amount/date, monthly contributions, custom return assumptions, and inflation. The UI follows the active light or dark theme. Local address: http://localhost:8501.
+Built a Streamlit app for user-selected mutual funds, defaulting to Vanguard Target Retirement 2035 Fund (VTTHX) with three pages: historical performance, S&P 500 comparison, and a personalized investment projection through December 31, 2035. A searchable ticker box offers common fund suggestions and accepts custom tickers; a dropdown recalls the five most recent unique entries for the current browser session. Features include growth charts, cumulative return, compound annual growth rate (CAGR), volatility, drawdown, calendar-year returns, and CSV downloads. Users can enter a purchase amount/date, monthly contributions, custom return assumptions, and inflation. The UI follows the active light or dark theme. Local address: http://localhost:8501. Public source repository: https://github.com/dougwalkerextension-sketch/stock-performance.
 
 ## Datasets used
 
@@ -18,6 +18,7 @@ The user prompts drove implementation directly; no separate generated coding pro
 
 - **Initial request:** “keep a record of all of this development session and provide a one page summary afterwards. Create a stock portfolio analysis app. It should analyze the performance of the vanguard target retirement fund 2035 VTTHX. Create a streamlit UI that shows historical performance, comparison vs the S&P 500, and a personalized page that allows a user to enter an amount to purchase and show the projected amount at 2035 given past performance.”
 - **UI refinement:** “Make the UI work if the user has dark mode active in the browser”
+- **Publication:** "publish this to github"; repository visibility: "Public repository".
 - **Autocomplete refinement:** "make the box where the user can enter their own funds as an autocomplete. Also have a drop down there that will shown the last five entries"
 - **Fund selection refinement:** "Add in the ability for the user to enter the code for any mutual fund, but default to the current one."
 - **Summary refinement:** “make sure the summary includes the following Include: project overview, datasets used, prompts you used during vibe coding, iterations you tried, and any learnings or observations from the workflow.”
@@ -32,6 +33,8 @@ The user prompts drove implementation directly; no separate generated coding pro
 5. Added a normalized ticker input, cached downloads per fund, and dynamic labels and exports across all pages. Nine tests passed, including fund switching and invalid/unavailable ticker handling; live VFIAX data loaded successfully.
 
 6. Added native searchable suggestions, custom ticker entry, and a five-entry recent-funds dropdown. Preserved custom values in suggestions after a test serialization issue. All ten tests passed, including history ordering, deduplication, eviction, and recent-fund selection.
+
+7. Published the reviewed source, tests, README, and session records to the public [stock-performance repository](https://github.com/dougwalkerextension-sketch/stock-performance) on the main branch. Excluded environment files, caches, and server logs.
 
 ## Learnings and workflow observations
 

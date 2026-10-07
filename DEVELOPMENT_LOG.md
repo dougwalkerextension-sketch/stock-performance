@@ -75,3 +75,9 @@ This is a task/activity record, not a verbatim chat transcript or a record of hi
 - Reviewed tracked files for credentials and excluded .venv, caches, and server logs via .gitignore.
 - Installed Git, initialized a main branch, and staged app source, tests, and documentation. Added portable run instructions and line-ending settings.
 - Publication result will be recorded after GitHub authentication and push are verified.
+
+- Publication verified: https://github.com/dougwalkerextension-sketch/stock-performance (public), main branch, initial commit 2489ec8.
+- GitHub device authentication completed for dougwalkerextension-sketch; configured repository-local author identity using GitHub's noreply address.
+- GitHub CLI installation completed after a delay. A portable CLI download was also extracted outside the repository during troubleshooting; it is not included in the published files.
+- Pushed ten reviewed files. Updated summary with the repository URL and publication prompt; this follow-up documentation is committed separately.
+- GitHub hosts the source repository; the running Streamlit app remains local. Existing ten passing tests remain the latest validation; publication changed documentation only.
